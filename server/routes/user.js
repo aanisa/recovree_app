@@ -16,7 +16,6 @@ var twilio = require('../modules/twilio');
 
 // Handles Ajax request for user information if user is authenticated
 router.get('/', function(req, res) {
-    console.log('get /user route');
     // check if logged in
     if (req.isAuthenticated()) {
         // send back user object from database
