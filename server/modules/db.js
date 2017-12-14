@@ -5,7 +5,6 @@ var mongoURI = 'mongodb://localhost:27017/recovree';
 if (process.env.MONGODB_URI) {
     mongoURI = process.env.MONGODB_URI;
 }
-console.log('MONGODB URI DB.JS 7', mongoURI);
 
 
 var MongoDB = mongoose.connect(mongoURI).connection;
