@@ -46,15 +46,16 @@ function getPhoneNumbers() {
 }
 
 //comment out sendSMS code when pushing to recovree test app
-// function sendSMS(phoneNumber, message) {
-//     client.messages.create({ to: phoneNumber, from: twilioNumber, body: message },
-//         function(err, data) {
-//             if (err) {
-//                 console.log('Error Sending Message');
-//             } else {
-//                 console.log('SMS SENT');
-//             }
-//         });
-// }
+function sendSMS(phoneNumber, message) {
+  console.log('Disabled Send SMS - modules/twilio.js');
+    // client.messages.create({ to: phoneNumber, from: twilioNumber, body: message },
+    //     function(err, data) {
+    //         if (err) {
+    //             console.log('Error Sending Message');
+    //         } else {
+    //             console.log('SMS SENT');
+    //         }
+    //     });
+}
 
 module.exports = sendSMS;
